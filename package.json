@@ -5,12 +5,14 @@
   "main": "./dist/script.js",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "start": "node ./dist/script.js",
+    "start": "NODE_ENV=production node ./dist/script.js",
     "dev": "nodemon ./src/script.ts",
     "test": "jest"
   },
   "keywords": [
+    "music",
     "music theory",
+    "scale",
     "scales",
     "notes"
   ],

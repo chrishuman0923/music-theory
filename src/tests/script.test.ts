@@ -1,5 +1,6 @@
+import { modes } from '../constants';
+import { Mode } from '../interfaces';
 import { getScale } from '../script';
-import { Mode, modes } from '../constants';
 import { majorScales, minorScales, Scale } from './scales';
 
 type TestSuite = [string, Scale[], Mode];

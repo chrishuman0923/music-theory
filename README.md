@@ -11,16 +11,27 @@ A simple Node CLI to generate the correct musical scale based on root note and m
 
 ### Development
 
-`npm start dev` will run the app in development mode and use nodemon to watch the typescript files in `src/` for changes and reload the app.
+1. `npm start dev` will run the app in development mode and use nodemon to watch the typescript files in `src/` for changes and reload the app.
+
+   **NOTE:** To update the inputs received by the app in development, you can update them at the top of the `src/script.ts` file.
 
 ### Test
 
-`npm test` will run the defined tests to confirm the app is working correctly.
+1. `npm test` will run the defined tests to confirm the app is working correctly.
 
 ### Production
 
 1. `npm build` will compile the `.ts` files in `src/` to `.js` files and put them in `dist/`.
 2. `npm start` will run the app in production mode and use the built files in `dist/`.
+
+   **NOTE:** Command line arguments should be passed to the application in production. The application takes 2 arguments:
+
+   - `rootNote`: The root note of the scale (e.g. `C`, `Eb`, etc.).
+   - `modeIndex`: The mode of the scale. (e.g. `2`, `3`, etc.).
+
+## ToDo
+
+- [ ] Add additional tests to cover the remaining modes.
 
 ## Enhancements
 
